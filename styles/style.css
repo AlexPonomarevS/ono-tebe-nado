@@ -278,6 +278,7 @@ body {
     margin-top: 181px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 90px;
 }
 
 .footer__address{
