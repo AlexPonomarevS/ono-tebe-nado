@@ -1,9 +1,9 @@
-body {
+.body {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
-  height: 293px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -61,12 +61,10 @@ body {
 .address-link {
   border-bottom: 1px solid black;
 }
-/* .address-text{
-    margin-top: -2px;
-} */
+
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   max-width: 1440px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -77,6 +75,8 @@ body {
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0/0.5);
@@ -121,7 +121,6 @@ body {
 .cover__description-text {
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -135,14 +134,13 @@ body {
   background: transparent;
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  height: 52px;
-  width: 257px;
+  min-height: 52px;
+  min-width: 257px;
   z-index: 1;
   border: 1px solid #fff;
 }
@@ -175,30 +173,22 @@ body {
   flex-direction: column;
   position: relative;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   color: #fff;
   justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
 }
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
 }
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
 }
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
 }
 
 .card__title {
@@ -232,10 +222,6 @@ body {
   margin: 0 50px;
   display: grid;
   grid-template-columns: auto 1fr;
-  /* align-items: baseline; */
-}
-.about__column {
-  height: 487px;
 }
 
 .about__logo {
@@ -270,7 +256,7 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.about__text p:first-child {
+.about__text .about__text-p:first-child {
   margin-bottom: 25px;
 }
 
